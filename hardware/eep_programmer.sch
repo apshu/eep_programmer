@@ -1,0 +1,209 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:USB_A J3
+U 1 1 6014B3E5
+P 6150 3450
+F 0 "J3" H 5950 3900 50  0000 L CNN
+F 1 "USB_A_DEVICE" H 5950 3800 50  0000 L CNN
+F 2 "" H 6300 3400 50  0001 C CNN
+F 3 " ~" H 6300 3400 50  0001 C CNN
+	1    6150 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:USB_A J2
+U 1 1 6014DAA6
+P 5300 3450
+F 0 "J2" H 5100 3900 50  0000 L CNN
+F 1 "USB_A_HOST" H 5100 3800 50  0000 L CNN
+F 2 "" H 5450 3400 50  0001 C CNN
+F 3 " ~" H 5450 3400 50  0001 C CNN
+	1    5300 3450
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Interface_USB:MCP2221AxP U1
+U 1 1 6015272E
+P 3700 3950
+F 0 "U1" H 3400 4600 50  0000 C CNN
+F 1 "MCP2221A-I/P" V 3700 4000 50  0000 C CIB
+F 2 "Package_DIP:DIP-14_W7.62mm" H 3700 4950 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20005565B.pdf" H 3700 4650 50  0001 C CNN
+	1    3700 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Memory_EEPROM:24LC512 U2
+U 1 1 60155490
+P 7650 3550
+F 0 "U2" H 7400 3800 50  0000 C CNN
+F 1 "24LC512 ... AT24CM02" H 7200 3150 50  0000 L CNN
+F 2 "" H 7650 3550 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21754M.pdf" H 7650 3550 50  0001 C CNN
+	1    7650 3550
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7650 3250 6950 3250
+Wire Wire Line
+	6050 3850 6150 3850
+Connection ~ 6150 3850
+Wire Wire Line
+	6150 3850 7250 3850
+Wire Wire Line
+	8050 3450 8050 3550
+Wire Wire Line
+	8050 3850 7650 3850
+Connection ~ 8050 3550
+Wire Wire Line
+	8050 3550 8050 3650
+Connection ~ 8050 3650
+Wire Wire Line
+	8050 3650 8050 3850
+Connection ~ 7650 3850
+Wire Wire Line
+	6450 3550 6950 3550
+Wire Wire Line
+	7250 3650 7250 3850
+Connection ~ 7250 3850
+Wire Wire Line
+	7250 3850 7650 3850
+$Comp
+L Device:R_Small R1
+U 1 1 60160D45
+P 6650 3350
+F 0 "R1" H 6680 3370 50  0000 L CNN
+F 1 "1k" H 6680 3310 50  0000 L CNN
+F 2 "" H 6650 3350 50  0001 C CNN
+F 3 "~" H 6650 3350 50  0001 C CNN
+	1    6650 3350
+	1    0    0    -1  
+$EndComp
+Connection ~ 6650 3250
+Wire Wire Line
+	6650 3250 6450 3250
+Connection ~ 6650 3450
+Wire Wire Line
+	6650 3450 6450 3450
+$Comp
+L Device:R_Small R2
+U 1 1 601615B7
+P 6950 3350
+F 0 "R2" H 6980 3370 50  0000 L CNN
+F 1 "1k" H 6980 3310 50  0000 L CNN
+F 2 "" H 6950 3350 50  0001 C CNN
+F 3 "~" H 6950 3350 50  0001 C CNN
+	1    6950 3350
+	1    0    0    -1  
+$EndComp
+Connection ~ 6950 3250
+Wire Wire Line
+	6950 3250 6650 3250
+Wire Wire Line
+	6950 3450 6950 3550
+Connection ~ 6950 3550
+Wire Wire Line
+	6950 3550 7250 3550
+Wire Wire Line
+	6650 3450 7250 3450
+Wire Wire Line
+	5000 3550 4100 3550
+Wire Wire Line
+	4100 3450 5000 3450
+$Comp
+L Connector:USB_B J1
+U 1 1 6016263D
+P 2400 3850
+F 0 "J1" H 2200 4300 50  0000 L CNN
+F 1 "USB_B" H 2200 4200 50  0000 L CNN
+F 2 "" H 2550 3800 50  0001 C CNN
+F 3 " ~" H 2550 3800 50  0001 C CNN
+	1    2400 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2700 3650 2700 3050
+Wire Wire Line
+	2700 3050 3700 3050
+Wire Wire Line
+	5000 3050 5000 3250
+Wire Wire Line
+	3700 3250 3700 3050
+Connection ~ 3700 3050
+Wire Wire Line
+	3700 3050 4850 3050
+Wire Wire Line
+	2300 4250 2400 4250
+Wire Wire Line
+	2400 4250 2400 4550
+Wire Wire Line
+	2400 4550 3700 4550
+Connection ~ 2400 4250
+Wire Wire Line
+	5400 3850 5300 3850
+Wire Wire Line
+	5300 3850 5300 4550
+Wire Wire Line
+	5300 4550 4850 4550
+Connection ~ 5300 3850
+Connection ~ 3700 4550
+Wire Wire Line
+	3300 3850 2700 3850
+Wire Wire Line
+	2700 3950 3300 3950
+$Comp
+L Device:C_Small C1
+U 1 1 601665CC
+P 4450 4050
+F 0 "C1" H 4460 4120 50  0000 L CNN
+F 1 "470n/10V" V 4300 3850 50  0000 L CNN
+F 2 "" H 4450 4050 50  0001 C CNN
+F 3 "~" H 4450 4050 50  0001 C CNN
+	1    4450 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 3250 4450 3250
+Wire Wire Line
+	4450 3250 4450 3950
+Wire Wire Line
+	4450 4150 4450 4550
+Connection ~ 4450 4550
+Wire Wire Line
+	4450 4550 3700 4550
+$Comp
+L Device:C_Small C2
+U 1 1 6016B997
+P 4850 4050
+F 0 "C2" H 4860 4120 50  0000 L CNN
+F 1 "470n/10V" V 4700 3850 50  0000 L CNN
+F 2 "" H 4850 4050 50  0001 C CNN
+F 3 "~" H 4850 4050 50  0001 C CNN
+	1    4850 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 3950 4850 3050
+Connection ~ 4850 3050
+Wire Wire Line
+	4850 3050 5000 3050
+Wire Wire Line
+	4850 4150 4850 4550
+Connection ~ 4850 4550
+Wire Wire Line
+	4850 4550 4450 4550
+$EndSCHEMATC
